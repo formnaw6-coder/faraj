@@ -31,5 +31,103 @@
             font-size: 1.2rem;
         }
         .section-title {
-            background: #fff
-            
+            background: #fff;
+            padding: 15px;
+            margin-top: 10px;
+            font-weight: bold;
+            border-bottom: 2px solid var(--primary-green);
+            display: flex;
+            justify-content: space-between;
+        }
+        .data-list {
+            background: white;
+            border-radius: 0 0 10px 10px;
+            box-shadow: var(--shadow);
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+        .row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 15px;
+            border-bottom: 1px solid #eee;
+        }
+        .row:last-child { border-bottom: none; }
+        .name-side { display: flex; align-items: center; gap: 10px; font-weight: 500; }
+        .price-side { text-align: left; }
+        .sell-price { color: var(--primary-green); font-weight: bold; font-size: 1.05rem; }
+        .buy-price { color: #7f8c8d; font-size: 0.9rem; margin-right: 10px; }
+        .unit { font-size: 0.75rem; color: #95a5a6; display: block; }
+        .up-arrow { color: var(--primary-green); font-size: 0.8rem; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">لیستی نرخەکان (Live Rates)</div>
+
+    <div class="section-title"><span>📍 بازاڕی ناوخۆ</span> <span>کڕین / فرۆشتن</span></div>
+    <div class="data-list">
+        <div class="row">
+            <div class="name-side">سلێمانی <small style="color:#999">IQD</small></div>
+            <div class="price-side">
+                <span class="buy-price">149,550</span>
+                <span class="sell-price">149,650 <span class="up-arrow">▲</span></span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="name-side">هەولێر <small style="color:#999">IQD</small></div>
+            <div class="price-side">
+                <span class="buy-price">149,500</span>
+                <span class="sell-price">149,550 <span class="up-arrow">▲</span></span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="name-side">دهۆک <small style="color:#999">IQD</small></div>
+            <div class="price-side">
+                <span class="buy-price">149,450</span>
+                <span class="sell-price">149,500 <span class="up-arrow">▲</span></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-title"><span>🌍 دراوە جیهانییەکان</span> <span>بەهای بازاڕ</span></div>
+    <div class="data-list">
+        <div class="row">
+            <div class="name-side">پاوەندی بەریتانی <small>GBP</small></div>
+            <div class="price-side"><span class="sell-price">73.39</span></div>
+        </div>
+        <div class="row">
+            <div class="name-side">یۆرۆ <small>EUR</small></div>
+            <div class="price-side"><span class="sell-price">84.84</span></div>
+        </div>
+        <div class="row">
+            <div class="name-side">لیرەی تورکی <small>TRY</small></div>
+            <div class="price-side"><span class="sell-price">4,352.59</span></div>
+        </div>
+    </div>
+
+    <div class="section-title"><span>🏆 زێڕ و زیو</span> <span>نرخ</span></div>
+    <div class="data-list">
+        <div class="row">
+            <div class="name-side">ئۆنسەی زێڕ</div>
+            <div class="price-side"><span class="sell-price">$4,877.20</span></div>
+        </div>
+        <div class="row">
+            <div class="name-side">زێڕی عەیار ٢٤ (مسقاڵ)</div>
+            <div class="price-side"><span class="sell-price">1,210,000 د.ع</span></div>
+        </div>
+        <div class="row">
+            <div class="name-side">زێڕی عەیار ٢١ (مسقاڵ)</div>
+            <div class="price-side"><span class="sell-price">1,059,000 د.ع</span></div>
+        </div>
+        <div class="row">
+            <div class="name-side">ئۆنسەی زیو</div>
+            <div class="price-side"><span class="sell-price">$77.15</span></div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
