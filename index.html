@@ -131,3 +131,117 @@
 
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="ku" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bourse UI</title>
+    <style>
+        body {
+            font-family: 'Tahoma', sans-serif;
+            background-color: #fcfcfc;
+            margin: 0;
+            padding: 10px;
+        }
+        /* Header Tabs */
+        .tabs {
+            display: flex;
+            justify-content: space-around;
+            background: white;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            margin-bottom: 10px;
+        }
+        .tab-item {
+            padding: 8px 15px;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: bold;
+            color: #555;
+        }
+        .active-tab {
+            background-color: #72a03d;
+            color: white;
+        }
+
+        /* Table Structure */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+        }
+        th {
+            color: #888;
+            font-size: 13px;
+            font-weight: normal;
+            padding: 10px;
+            text-align: right;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        td {
+            padding: 12px 10px;
+            border-bottom: 1px solid #f9f9f9;
+            font-size: 14px;
+            color: #333;
+        }
+        .price {
+            font-weight: bold;
+            text-align: left;
+        }
+        .up-arrow {
+            color: #72a03d;
+            font-size: 10px;
+            margin-left: 4px;
+        }
+        .currency-label {
+            color: #999;
+            font-size: 11px;
+            display: block;
+        }
+        .row-container {
+            display: flex;
+            align-items: center;
+        }
+        .icon-circle {
+            width: 30px;
+            height: 30px;
+            background: #eee;
+            border-radius: 50%;
+            margin-left: 10px;
+        }
+
+        /* Sections */
+        .section-header {
+            padding: 15px 10px 5px 10px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #444;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="tabs">
+        <div class="tab-item active-tab">بازاڕی ناوخۆ</div>
+        <div class="tab-item">حەواڵە</div>
+        <div class="tab-item">تۆمان</div>
+        <div class="tab-item">بازاڕی جیهانی</div>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>دراو</th>
+                <th style="text-align: left;">نرخی فرۆشتن</th>
+                <th style="text-align: left;">نرخی کڕین</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <div class="row-container">
+                        <div class="icon-circle"></div>
+                        <div>سلێمانی <span class="currency-
+                                         
